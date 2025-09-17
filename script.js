@@ -1,30 +1,7 @@
 // -------------------------
 // Hamburger menu toggle
 // -------------------------
-const hamburger = document.getElementById('hamburger');
-const nav = document.getElementById('nav');
-const navCancel = document.getElementById('nav-cancel');
-
-if (hamburger && nav && navCancel) {
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    navCancel.style.display = nav.classList.contains('active') ? 'block' : 'none';
-  });
-
-  navCancel.addEventListener('click', () => {
-    nav.classList.remove('active');
-    navCancel.style.display = 'none';
-  });
-
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth <= 768) {
-        nav.classList.remove('active');
-        navCancel.style.display = 'none';
-      }
-    });
-  });
-}
+// Hamburger menu toggle removed
 
 // -------------------------
 // Initialize AOS

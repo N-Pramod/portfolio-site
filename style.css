@@ -82,30 +82,17 @@ body {
   .nav {
     position: absolute;
     top: 60px; /* below header */
-    .nav {
-      position: absolute;
-      top: 60px; /* below header */
-      right: 0;
-      background: #fff;
-      width: 200px;
-      transform: translateX(100%);
-      transition: transform 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+    right: 0;
+    background: #fff;
+    width: 200px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
 
-    .nav.active {
-      transform: translateX(0);
-    }
-
-    .nav ul {
-      flex-direction: column;
-      padding: 15px;
-      gap: 15px;
-    }
-
-    .hamburger {
-      display: flex;
-    }
+  .nav.active {
+    transform: translateX(0);
+  }
 
   .nav ul {
     flex-direction: column;
