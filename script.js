@@ -1,33 +1,48 @@
-// AOS Initialization
-AOS.init();
-
-// EmailJS Initialization
-(function() {
-  emailjs.init("your_emailjs_user_id"); // Replace with your actual user ID
-})();
-
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  emailjs.sendForm('your_service_id', 'your_template_id', this)
-    .then(function(response) {
-       alert('Message sent successfully!');
-    }, function(error) {
-       alert('Failed to send message. Please try again.');
-       console.log(error);
-    });
-
-  // Optionally reset the form
-  this.reset();
-});
-
-
+// -------------------------
+// Hamburger menu toggle
+// -------------------------
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 
 hamburger.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
+
+// -------------------------
+// Initialize AOS
+// -------------------------
+AOS.init();
+
+// -------------------------
+// Contact form submission
+// -------------------------
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  fetch("https://formspree.io/f/mblavakw", {
+    method: "POST",
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        form.reset(); // Clear form
+        window.location.href = "thank-you.html"; // ✅ Redirect
+      } else {
+        alert("⚠️ Something went wrong. Please try again later.");
+      }
+    })
+    .catch(() => {
+      alert("⚠️ Failed to submit the form. Please check your connection.");
+    });
+});
+
 
 
 
