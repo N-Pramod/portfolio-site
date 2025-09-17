@@ -431,3 +431,40 @@ body {
   }
 }
 
+/* -------------------------------
+   Technical Skills Section
+---------------------------------*/
+
+.skills {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.skills h2 {
+  margin-bottom: 25px;
+}
+
+/* Grid layout for desktop */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+  gap: 20px;
+  line-height: 1.8;
+}
+
+/* Column styling */
+.skills-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsive: stack vertically on mobile */
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 20px; /* spacing between stacked columns */
+  }
+}
+
