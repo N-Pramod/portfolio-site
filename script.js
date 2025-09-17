@@ -2,10 +2,34 @@
 // Hamburger menu toggle
 // -------------------------
 const hamburger = document.getElementById('hamburger');
+hamburger.addEventListener('click', () => {
 const nav = document.getElementById('nav');
+const navCancel = document.getElementById('nav-cancel');
 
+// Open nav
 hamburger.addEventListener('click', () => {
   nav.classList.toggle('active');
+  if (nav.classList.contains('active')) {
+    navCancel.style.display = 'block';
+  } else {
+    navCancel.style.display = 'none';
+  }
+});
+
+// Close nav on cancel button
+navCancel.addEventListener('click', () => {
+  nav.classList.remove('active');
+  navCancel.style.display = 'none';
+});
+
+// Close nav when any nav link is clicked (mobile only)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+      nav.classList.remove('active');
+      navCancel.style.display = 'none';
+    }
+  });
 });
 
 // -------------------------
