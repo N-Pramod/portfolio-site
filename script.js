@@ -1,48 +1,39 @@
-// -------------------------
-// Hamburger menu toggle
-// -------------------------
-const hamburger = document.getElementById('hamburger');
-const nav = document.getElementById('nav');
+// Mobile Navigation Toggle Script
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    const navLinks = document.querySelectorAll('.nav a');
 
-hamburger.addEventListener('click', () => {
-  nav.classList.toggle('active');
-});
+    // Toggle mobile menu when hamburger is clicked
+    hamburger.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
 
-// -------------------------
-// Initialize AOS
-// -------------------------
-AOS.init();
+    // Close menu when a navigation link is clicked (optional)
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            nav.classList.remove('active');
+            hamburger.classList.remove('active');
+        });
+    });
 
-// -------------------------
-// Contact form submission
-// -------------------------
-const form = document.getElementById("contact-form");
+    // Close menu when clicking outside (optional)
+    document.addEventListener('click', function(event) {
+        const isClickInsideNav = nav.contains(event.target);
+        const isClickOnHamburger = hamburger.contains(event.target);
+        
+        if (!isClickInsideNav && !isClickOnHamburger && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+    });
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const formData = new FormData(form);
-
-  fetch("https://formspree.io/f/mblavakw", {
-    method: "POST",
-    body: formData,
-    headers: {
-      Accept: "application/json",
-    },
-  })
-    .then((response) => {
-      if (response.ok) {
-        form.reset(); // Clear form
-        window.location.href = "thank-you.html"; // ✅ Redirect
-      } else {
-        alert("⚠️ Something went wrong. Please try again later.");
-      }
-    })
-    .catch(() => {
-      alert("⚠️ Failed to submit the form. Please check your connection.");
+    // Handle window resize - close menu if window becomes wider than mobile breakpoint
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            nav.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
     });
 });
-
-
-
-
