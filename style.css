@@ -82,14 +82,16 @@ body {
   .nav {
     position: absolute;
     top: 60px; /* below header */
-    right: -200px;
+    left: 100vw;
     background: #fff;
     width: 200px;
-    transition: right 0.3s ease;
+    transition: left 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    right: auto;
   }
 
   .nav.active {
+    left: auto;
     right: 0;
   }
 
