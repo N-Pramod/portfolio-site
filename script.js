@@ -20,3 +20,14 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
   // Optionally reset the form
   this.reset();
 });
+
+
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+
+
+
