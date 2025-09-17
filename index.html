@@ -22,8 +22,8 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience-projects">Experience</a></li>
+          <li><a href="#experience-projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -82,47 +82,84 @@
 
 
 
-  <!-- Skills -->
-  <section id="skills" class="skills" data-aos="fade-up">
-    <div class="container">
-      <h2>Skills & Competencies</h2>
-      <ul class="skills-list">
-        <li>Selenium</li>
-        <li>Java</li>
-        <li>TestNG</li>
-        <li>Automation Frameworks</li>
-        <li>API Testing</li>
-        <li>Agile/Scrum</li>
-      </ul>
-    </div>
-  </section>
+<!-- Technical Skills -->
+<section id="skills" class="skills" data-aos="fade-up" style="background-color:#f9f9f9; padding: 40px; border-radius: 10px;">
+  <div class="container">
+    <h2>Technical Skills</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; line-height: 1.8;">
 
-  <!-- Experience -->
-  <section id="experience" class="experience" data-aos="fade-up">
-    <div class="container">
-      <h2>Experience & Projects</h2>
-      <div class="job">
-        <h3>Software Test Engineer</h3>
-        <p><strong>Company:</strong> XYZ Software Pvt Ltd (2022 – Present)</p>
-        <ul>
-          <li>Built automation test suites using Selenium and Java</li>
-          <li>Participated in Agile sprint planning and retrospectives</li>
-          <li>Integrated test cases in CI/CD pipeline</li>
+      <!-- Left Column -->
+      <div>
+        <ul style="list-style-type: none; padding: 0;">
+          <li>⚙️ <strong>Automation:</strong> Selenium WebDriver, Java, TestNG, JUnit, POM, Data-Driven Testing, Maven</li>
+          <li>📝 <strong>Manual Testing:</strong> Test Case Design, Functional Testing, Regression Testing, UAT, JIRA, SDLC/STLC</li>
         </ul>
       </div>
-    </div>
-  </section>
 
-  <!-- Projects -->
-  <section id="projects" class="projects" data-aos="fade-up">
-    <div class="container">
-      <h2>Projects & Frameworks</h2>
-      <div class="project">
-        <h3>Automation Testing Framework</h3>
-        <p>Developed a TestNG-based hybrid framework with reusable components and reporting.</p>
+      <!-- Right Column -->
+      <div>
+        <ul style="list-style-type: none; padding: 0;">
+          <li>☕ <strong>Java:</strong> OOPs, Collections, Exception Handling, File Handling, Arrays, Loops</li>
+          <li>🛠️ <strong>Tools & Frameworks:</strong> Apache POI, Extent Reports, Log4j, Eclipse IDE, Cross-Browser Testing</li>
+          <li>🌐 <strong>Others:</strong> Basics: SQL, HTML, Rest Assured API Testing, Postman, JMeter</li>
+        </ul>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+<!-- Experience & Projects -->
+<section id="experience-projects" class="experience-projects" data-aos="fade-up" 
+         style="background-color:#f9f9f9; padding:40px; margin-top:20px;">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+
+      <!-- Experience Box -->
+      <div style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+        <h2 style="border-bottom:2px solid #007acc; padding-bottom:8px;">Experience</h2>
+        <h3>Capgemini Technology Services India Limited</h3>
+        <h4>Software Test Engineer</h4>
+        <p><em>2022 - 2025</em></p>
+        <h5>Key Responsibilities:</h5>
+        <ul>
+          <li>Designed and executed comprehensive manual & automated test cases, ensuring maximum coverage across complex enterprise applications</li>
+          <li>Developed and maintained robust Java-Selenium-TestNG automation scripts, reducing regression testing effort by <strong>60%</strong></li>
+          <li>Performed critical smoke, sanity & regression testing cycles, collaborating with cross-functional teams to resolve defects quickly</li>
+          <li>Created and maintained precise test documentation aligned with project requirements and industry best practices</li>
+          <li>Led end-to-end testing initiatives for major software releases, ensuring <strong>zero critical bugs</strong> in production</li>
+        </ul>
+      </div>
+
+      <!-- Projects Box -->
+      <div style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+        <h2 style="border-bottom:2px solid #007acc; padding-bottom:8px;">Projects</h2>
+        <h3>AT&T</h3>
+        <ul>
+          <li>Led integration, system testing, and validation of complex firmware and software components</li>
+          <li>Partnered with cross-functional development teams to drive seamless module integration across various platforms</li>
+          <li>Oversaw end-to-end firmware upgrade and downgrade activities, minimizing downtime by <strong>40%</strong></li>
+          <li>Developed comprehensive sanity test cases contributing to <strong>95% product reliability</strong></li>
+          <li>Designed and implemented Built-In Self-Test (BIST) test cases for enhanced automated diagnostic coverage</li>
+        </ul>
+
+        <h3 style="margin-top:20px;">E-Commerce Automation Framework - Capstone Project</h3>
+        <ul>
+          <li>Developed end-to-end automation framework covering registration, login, product search, and checkout workflows</li>
+          <li>Built framework using Selenium WebDriver (Java) with Page Object Model (POM) and Page Factory patterns</li>
+          <li>Implemented data-driven testing with Apache POI, creating <strong>25+ automated test cases</strong> with parallel execution</li>
+          <li>Integrated Extent Reports with screenshots for detailed reporting and improved defect traceability</li>
+          <li>Applied advanced XPath/CSS selectors and explicit waits for stable element handling</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
   <!-- Contact -->
 <section id="contact" class="contact-section" data-aos="fade-up">
