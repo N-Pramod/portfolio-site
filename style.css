@@ -82,10 +82,11 @@ body {
   .nav {
     position: absolute;
     top: 60px; /* below header */
+    left: 0;
     right: 0;
     background: #fff;
-    width: 200px;
-    border-radius: 8px;
+    width: 100%;
+    border-radius: 0;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     z-index: 999;
@@ -96,12 +97,10 @@ body {
   }
 
   .nav ul {
-    /* flex-direction: column;
+    flex-direction: column;
     padding: 15px;
-    gap: 15px; */
-    display:block;
-    text-align: left;
-    padding: 10px 15px;
+    gap: 15px;
+    
   }
 
   .hamburger {
