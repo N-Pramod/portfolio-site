@@ -62,6 +62,7 @@ body {
   color: #007acc;
 }
 
+
 /* Hamburger styling */
 .hamburger {
   display: none;
@@ -87,20 +88,20 @@ body {
     background: #fff;
     width: 100%;
     border-radius: 0;
+    transform: translateY(-120%);
     transition: transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     z-index: 999;
   }
 
   .nav.active {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   .nav ul {
     flex-direction: column;
     padding: 15px;
     gap: 15px;
-    
   }
 
   .hamburger {
@@ -123,12 +124,38 @@ body {
   font-weight: 500;
 }
 
+/* Hero Section */
 .hero {
-  background: #e0e7ff;
+  background: linear-gradient(135deg, #1e40af, #1991c2);
+  color: #fff;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sections */
 .about,
 .skills,
 .experience,
@@ -137,6 +164,7 @@ body {
   padding: 60px 20px;
 }
 
+/* Skills Section */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -149,6 +177,12 @@ body {
   color: #fff;
   padding: 8px 16px;
   border-radius: 6px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+  background: #1991c2;
 }
 
 /* Contact Section */
@@ -229,12 +263,12 @@ body {
 .contact-form button {
   background: linear-gradient(to right, #1e40af, #1991c2);
   color: #fff;
-  padding: 12px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .contact-form button i {
@@ -242,7 +276,8 @@ body {
 }
 
 .contact-form button:hover {
-  background: #1e3a8a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .response-time small {
@@ -334,10 +369,9 @@ body {
   word-break: break-word;
 }
 
-
 /* About Section */
 .about {
-  background: #f0f4f8; /* Light gray-blue background */
+  background: #f0f4f8;
   padding: 70px 20px;
 }
 
@@ -345,7 +379,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  background: #ffffff; /* White card look inside */
+  background: #ffffff;
   padding: 40px 30px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -375,11 +409,6 @@ body {
 }
 
 /* About Section Two-Column */
-.about {
-  background: #f0f4f8;
-  padding: 70px 20px;
-}
-
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -449,15 +478,13 @@ body {
    Experience & Projects Section
 ---------------------------------*/
 
-/* Grid container: two columns on desktop */
 .experience-projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns for desktop */
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin-top: 20px;
 }
 
-/* Individual boxes styling */
 .experience-box, 
 .projects-box {
   background: #fff;
@@ -466,7 +493,6 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Section headings */
 .experience-box h2, 
 .projects-box h2 {
   border-bottom: 2px solid #007acc;
@@ -474,20 +500,17 @@ body {
   margin-bottom: 15px;
 }
 
-/* Responsive: stack vertically on mobile devices */
 @media screen and (max-width: 768px) {
   .experience-projects-grid {
-    grid-template-columns: 1fr; /* Single column */
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  /* Optional: reduce padding for mobile */
   .experience-box, 
   .projects-box {
     padding: 20px;
   }
 
-  /* Optional: adjust heading size for mobile */
   .experience-box h2, 
   .projects-box h2 {
     font-size: 1.5rem;
@@ -508,26 +531,22 @@ body {
   margin-bottom: 25px;
 }
 
-/* Grid layout for desktop */
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   line-height: 1.8;
 }
 
-/* Column styling */
 .skills-column ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* Responsive: stack vertically on mobile */
 @media screen and (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: 1fr; /* single column */
-    gap: 20px; /* spacing between stacked columns */
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
-
