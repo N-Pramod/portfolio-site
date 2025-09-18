@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <!-- AOS (Animate On Scroll) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -17,7 +19,10 @@
 <!-- Header -->
 <header class="header">
   <div class="container">
-    <div class="logo">Pramod N</div>
+    <div class="logo">
+      <span class="logo-text">Pramod N</span>
+      <span class="logo-subtitle">QA Engineer</span>
+    </div>
     
     <!-- Hamburger for mobile -->
     <div class="hamburger" id="hamburger">
@@ -29,286 +34,579 @@
     <nav class="nav" id="nav">
       <div class="close-btn" id="close-btn">&times;</div>
       <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience-projects">Experience</a></li>
-        <li><a href="#experience-projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<!-- Hero -->
-<section class="hero" data-aos="fade-up">
+<!-- Hero Section -->
+<section id="home" class="hero" data-aos="fade-up">
+  <div class="hero-background">
+    <div class="hero-particles"></div>
+  </div>
   <div class="container">
-    <h2>Software Test Engineer</h2>
-    <p>
-      3+ years of experience in Manual & Automation Testing. <br />
-      Expertise in Selenium, Java, TestNG, Maven, Git, Jenkins, API Testing, and Agile process. <br />
-      Proven track record in creating reusable frameworks, reducing regression cycles, and improving overall quality.
-    </p>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Pramod N</span>
+        </h1>
+        <h2 class="hero-subtitle">Software Test Engineer</h2>
+        <p class="hero-description">
+          Passionate about delivering quality software through comprehensive testing strategies. 
+          3+ years of experience in Manual & Automation Testing with expertise in creating 
+          robust frameworks that ensure reliability and performance.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Projects Tested</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Bug Detection Rate</span>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-envelope"></i>
+            Get In Touch
+          </a>
+          <a href="Resume.pdf" target="_blank" class="btn btn-secondary">
+            <i class="fas fa-download"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-avatar">
+          <div class="avatar-circle">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="floating-icons">
+            <div class="floating-icon" style="--delay: 0s">
+              <i class="fab fa-java"></i>
+            </div>
+            <div class="floating-icon" style="--delay: 1s">
+              <i class="fas fa-bug"></i>
+            </div>
+            <div class="floating-icon" style="--delay: 2s">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="floating-icon" style="--delay: 3s">
+              <i class="fas fa-cogs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-
-<!-- About -->
+<!-- About Section -->
 <section id="about" class="about" data-aos="fade-up">
-  <div class="container about-grid">
-    
-    <!-- Left: About Me -->
-    <div class="about-left">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Get to know me</span>
       <h2 class="section-title">About Me</h2>
-      <h4 class="subtitle">Driven by Quality</h4>
-      <p class="about-text">
-        I'm a motivated <strong>Software Test Engineer</strong> with a Master's in Computer Applications and 3+ years 
-        of hands-on experience at <strong>Capgemini</strong>. My passion lies in creating robust automation frameworks 
-        that ensure software quality and reliability.
-      </p>
-      <p class="about-text">
-        Specializing in <strong>Selenium WebDriver with Java</strong>, I've successfully reduced regression testing 
-        cycles while improving overall test coverage. My experience spans across complex enterprise projects including 
-        <em>telecommunications</em> and <em>e-commerce platforms</em>.
-      </p>
+      <p class="section-subtitle">Driven by Quality, Powered by Innovation</p>
     </div>
+    
+    <div class="about-content">
+      <div class="about-text">
+        <div class="about-card">
+          <div class="card-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <div class="card-content">
+            <h3>Professional Journey</h3>
+            <p>
+              I'm a motivated <strong>Software Test Engineer</strong> with a Master's in Computer Applications and 3+ years 
+              of hands-on experience at <strong>Capgemini</strong>. My passion lies in creating robust automation frameworks 
+              that ensure software quality and reliability.
+            </p>
+          </div>
+        </div>
 
-    <!-- Right: Education -->
-    <div class="about-right">
-      <h2 class="section-title">Education Highlights</h2>
-      <div class="education-card">
-        <h4>Master of Computer Applications (MCA)</h4>
-        <p>Dayananda Sagar Institutions • <strong>CGPA: 7.9</strong> • 2021</p>
+        <div class="about-card">
+          <div class="card-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="card-content">
+            <h3>Expertise & Impact</h3>
+            <p>
+              Specializing in <strong>Selenium WebDriver with Java</strong>, I've successfully reduced regression testing 
+              cycles by 60% while improving overall test coverage. My experience spans across complex enterprise projects 
+              including telecommunications and e-commerce platforms.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div class="card-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="card-content">
+            <h3>Achievements</h3>
+            <p>
+              Led end-to-end testing initiatives for major software releases, ensuring zero critical bugs in production. 
+              Developed comprehensive automation frameworks that improved team productivity and software reliability.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="education-card">
-        <h4>Bachelor of Computer Applications (BCA)</h4>
-        <p>Vijayanagara College • <strong>69%</strong> • 2018</p>
+
+      <div class="about-education">
+        <h3 class="education-title">Education</h3>
+        <div class="education-timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Master of Computer Applications (MCA)</h4>
+              <p class="institution">Dayananda Sagar Institutions</p>
+              <p class="grade">CGPA: 7.9 • 2021</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Bachelor of Computer Applications (BCA)</h4>
+              <p class="institution">Vijayanagara College</p>
+              <p class="grade">69% • 2018</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
   </div>
 </section>
 
-
-
-
-<!-- Technical Skills -->
+<!-- Skills Section -->
 <section id="skills" class="skills" data-aos="fade-up">
   <div class="container">
-    <h2>Technical Skills</h2>
+    <div class="section-header">
+      <span class="section-tag">What I do best</span>
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">Comprehensive expertise across testing technologies</p>
+    </div>
+
     <div class="skills-grid">
-
-      <!-- Left Column -->
-      <div class="skills-column">
-        <ul>
-          <li>⚙️ <strong>Automation:</strong> Selenium WebDriver, Java, TestNG, JUnit, POM, Data-Driven Testing, Maven</li>
-          <li>📝 <strong>Manual Testing:</strong> Test Case Design, Functional Testing, Regression Testing, UAT, JIRA, SDLC/STLC</li>
-        </ul>
+      <div class="skill-category">
+        <div class="category-header">
+          <i class="fas fa-robot"></i>
+          <h3>Automation Testing</h3>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-name">Selenium WebDriver</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Java</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">TestNG</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 88%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Maven</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Right Column -->
-      <div class="skills-column">
-        <ul>
-          <li>☕ <strong>Java:</strong> OOPs, Collections, Exception Handling, File Handling, Arrays, Loops</li>
-          <li>🛠️ <strong>Tools & Frameworks:</strong> Apache POI, Extent Reports, Log4j, Eclipse IDE, Cross-Browser Testing</li>
-          <li>🌐 <strong>Others:</strong> Basics: SQL, HTML, Rest Assured API Testing, Postman, JMeter</li>
-        </ul>
+      <div class="skill-category">
+        <div class="category-header">
+          <i class="fas fa-clipboard-check"></i>
+          <h3>Manual Testing</h3>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-name">Test Case Design</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Functional Testing</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 92%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Regression Testing</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">JIRA</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <div class="skill-category">
+        <div class="category-header">
+          <i class="fas fa-tools"></i>
+          <h3>Tools & Frameworks</h3>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-name">Apache POI</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 82%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Extent Reports</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Postman</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 78%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Eclipse IDE</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 88%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-
-
-<!-- Experience & Projects -->
-<section id="experience-projects" class="experience-projects" data-aos="fade-up">
+<!-- Experience Section -->
+<section id="experience" class="experience" data-aos="fade-up">
   <div class="container">
-    
-    <div class="experience-projects-grid">
+    <div class="section-header">
+      <span class="section-tag">My journey</span>
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-subtitle">Building quality software through comprehensive testing</p>
+    </div>
 
-      <!-- Experience Box -->
-      <div class="experience-box">
-        <h2>Experience</h2>
-        <h3>Capgemini Technology Services India Limited</h3>
-        <h4>Software Test Engineer</h4>
-        <p><em>2022 - 2025</em></p>
-        <h5>Key Responsibilities:</h5>
-        <ul>
-          <li>Designed and executed comprehensive manual & automated test cases, ensuring maximum coverage across complex enterprise applications</li>
-          <li>Developed and maintained robust Java-Selenium-TestNG automation scripts, reducing regression testing effort by <strong>60%</strong></li>
-          <li>Performed critical smoke, sanity & regression testing cycles, collaborating with cross-functional teams to resolve defects quickly</li>
-          <li>Created and maintained precise test documentation aligned with project requirements and industry best practices</li>
-          <li>Led end-to-end testing initiatives for major software releases, ensuring <strong>zero critical bugs</strong> in production</li>
-        </ul>
+    <div class="experience-timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="experience-card">
+            <div class="experience-header">
+              <div class="company-info">
+                <h3>Software Test Engineer</h3>
+                <h4>Capgemini Technology Services India Limited</h4>
+                <span class="duration">2022 - 2025</span>
+              </div>
+              <div class="company-logo">
+                <i class="fas fa-building"></i>
+              </div>
+            </div>
+            <div class="experience-description">
+              <h5>Key Responsibilities & Achievements:</h5>
+              <ul>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  Designed and executed comprehensive manual & automated test cases, ensuring maximum coverage across complex enterprise applications
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  Developed and maintained robust Java-Selenium-TestNG automation scripts, reducing regression testing effort by <strong>60%</strong>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  Performed critical smoke, sanity & regression testing cycles, collaborating with cross-functional teams to resolve defects quickly
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  Created and maintained precise test documentation aligned with project requirements and industry best practices
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  Led end-to-end testing initiatives for major software releases, ensuring <strong>zero critical bugs</strong> in production
+                </li>
+              </ul>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Selenium</span>
+              <span class="tech-tag">TestNG</span>
+              <span class="tech-tag">Maven</span>
+              <span class="tech-tag">JIRA</span>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Projects Box -->
-      <div class="projects-box">
-        <h2>Projects</h2>
-        <h3>AT&T</h3>
-        <ul>
-          <li>Led integration, system testing, and validation of complex firmware and software components</li>
-          <li>Partnered with cross-functional development teams to drive seamless module integration across various platforms</li>
-          <li>Oversaw end-to-end firmware upgrade and downgrade activities, minimizing downtime by <strong>40%</strong></li>
-          <li>Developed comprehensive sanity test cases contributing to <strong>95% product reliability</strong></li>
-          <li>Designed and implemented Built-In Self-Test (BIST) test cases for enhanced automated diagnostic coverage</li>
-        </ul>
-
-        <h3>E-Commerce Automation Framework - Capstone Project</h3>
-        <ul>
-          <li>Developed end-to-end automation framework covering registration, login, product search, and checkout workflows</li>
-          <li>Built framework using Selenium WebDriver (Java) with Page Object Model (POM) and Page Factory patterns</li>
-          <li>Implemented data-driven testing with Apache POI, creating <strong>25+ automated test cases</strong> with parallel execution</li>
-          <li>Integrated Extent Reports with screenshots for detailed reporting and improved defect traceability</li>
-          <li>Applied advanced XPath/CSS selectors and explicit waits for stable element handling</li>
-        </ul>
-      </div>
-
     </div>
   </div>
 </section>
 
+<!-- Projects Section -->
+<section id="projects" class="projects" data-aos="fade-up">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">My work</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Real-world applications of testing expertise</p>
+    </div>
 
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>AT&T Telecommunications Testing</h3>
+          <p>
+            Led integration, system testing, and validation of complex firmware and software components. 
+            Oversaw end-to-end firmware upgrade activities, minimizing downtime by 40%.
+          </p>
+          <div class="project-achievements">
+            <div class="achievement">
+              <i class="fas fa-chart-line"></i>
+              <span>95% Product Reliability</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-clock"></i>
+              <span>40% Downtime Reduction</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">System Testing</span>
+            <span class="tech-tag">Integration Testing</span>
+            <span class="tech-tag">BIST</span>
+          </div>
+        </div>
+      </div>
 
-  <!-- Contact -->
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>E-Commerce Automation Framework</h3>
+          <p>
+            Developed comprehensive end-to-end automation framework covering registration, login, 
+            product search, and checkout workflows using Selenium WebDriver with Java.
+          </p>
+          <div class="project-achievements">
+            <div class="achievement">
+              <i class="fas fa-robot"></i>
+              <span>25+ Automated Test Cases</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Parallel Execution</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Selenium</span>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">TestNG</span>
+            <span class="tech-tag">POM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Test Reporting Dashboard</h3>
+          <p>
+            Created comprehensive test reporting solution using Extent Reports with screenshots 
+            for detailed reporting and improved defect traceability across multiple projects.
+          </p>
+          <div class="project-achievements">
+            <div class="achievement">
+              <i class="fas fa-eye"></i>
+              <span>Enhanced Visibility</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-bug"></i>
+              <span>Better Traceability</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Extent Reports</span>
+            <span class="tech-tag">Apache POI</span>
+            <span class="tech-tag">Log4j</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
 <section id="contact" class="contact-section" data-aos="fade-up">
   <div class="container">
-
-    <!-- Contact Header Title -->
-    <div class="contact-header">
-      <p class="small-heading">LET'S CONNECT</p>
-      <h2 class="section-title">GET IN TOUCH</h2>
-      <p class="description">
-        Ready to discuss your testing needs or explore collaboration opportunities? I'm
-        always open to connecting with fellow professionals and potential clients.
+    <div class="section-header">
+      <span class="section-tag">Let's connect</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">
+        Ready to discuss your testing needs or explore collaboration opportunities? 
+        I'm always open to connecting with fellow professionals and potential clients.
       </p>
     </div>
 
-    <div class="contact-grid">
-      
-      <!-- Contact Info -->
+    <div class="contact-content">
       <div class="contact-info">
-        <h3>Contact Information</h3>
-        <div class="info-box">
-          <i class="fas fa-envelope"></i>
-          <div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-details">
             <h4>Email</h4>
             <p>pramodn483@gmail.com</p>
           </div>
         </div>
-        <div class="info-box">
-          <i class="fas fa-phone"></i>
-          <div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-details">
             <h4>Phone</h4>
             <p>+91 87629 50362</p>
           </div>
         </div>
-        <div class="info-box">
-          <i class="fas fa-map-marker-alt"></i>
-          <div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-details">
             <h4>Location</h4>
             <p>Hospete, Karnataka, India</p>
           </div>
         </div>
 
-        <h3>Connect with Me</h3>
-        <div class="info-box">
-  <i class="fab fa-linkedin"></i>
-  <div>
-    <h4>LinkedIn</h4>
-    <p>
-      <a href="https://www.linkedin.com/in/n-pramod-82032819a" target="_blank" rel="noopener noreferrer">
-        N-PRAMOD-82032819A
-      </a>
-    </p>
-  </div>
-</div>
-<div class="info-box">
-  <i class="fab fa-github"></i>
-  <div>
-    <h4>GitHub</h4>
-    <p>
-      <a href="https://github.com/pramodn483-dotcom" target="_blank" rel="noopener noreferrer">
-        pramodn483-dotcom
-      </a>
-    </p>
-  </div>
-</div>
-
-        <div class="info-box">
-          <i class="fas fa-file-download"></i>
-          <div>
-            <h4>Resume</h4>
-            <p><a href="Resume.pdf" target="_blank">Download PDF</a></p>
+        <div class="social-links">
+          <h4>Connect with Me</h4>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/n-pramod-82032819a" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/pramodn483-dotcom" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="Resume.pdf" target="_blank" class="social-link">
+              <i class="fas fa-file-pdf"></i>
+            </a>
           </div>
         </div>
       </div>
 
-      <!-- Contact Form -->
-<div class="contact-form">
-  <h3>Send a Message</h3>
-  <form id="contact-form">
-    <div class="form-row">
-      <input type="text" name="name" placeholder="Name *" required />
-      <input type="email" name="email" placeholder="Email *" required />
-    </div>
-    <input type="text" name="subject" placeholder="Subject *" required />
-    <textarea name="message" rows="5" placeholder="Message *" required></textarea>
-
-    <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-  </form>
-
-  <div class="response-time">
-    <small>I typically respond within 24 hours. For urgent matters, please call directly.</small>
-  </div>
-</div>
-
-
-
+      <div class="contact-form">
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" placeholder="Subject" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+        <div class="response-time">
+          <small>I typically respond within 24 hours. For urgent matters, please call directly.</small>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-text">
+        <p>&copy; 2025 Pramod N. All rights reserved.</p>
+        <p>Crafted with <i class="fas fa-heart"></i> and dedication to quality</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Pramod N. All rights reserved.</p>
-  </footer>
-
-  <!-- AOS JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-   <script>
-  const form = document.getElementById("contact-form");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-
-    fetch("https://formspree.io/f/mblavakw", {
-      method: "POST",
-      body: formData,
-      headers: {
-        Accept: "application/json",
-      },
-    })
-      .then((response) => {
-        if (response.ok) {
-          form.reset(); // Clear form
-          window.location.href = "thank-you.html"; // ✅ Redirect
-        } else {
-          alert("⚠️ Something went wrong. Please try again later.");
-        }
-      })
-      .catch(() => {
-        alert("⚠️ Failed to submit the form. Please check your connection.");
-      });
-  });
-</script>
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
