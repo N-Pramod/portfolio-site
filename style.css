@@ -94,6 +94,24 @@ body {
   border-radius: 3px;
 }
 
+@media screen and (min-width: 769px) {
+  .close-btn {
+    display: none;
+  }
+}
+
+.close-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+
 /* Responsive: mobile */
 @media screen and (max-width: 768px) {
   .nav {
@@ -109,7 +127,22 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     z-index: 999;
   }
+  .close-btn {
+    display: block;
+    z-index: 1001;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    height: 100vh;
+    transform: translateY(-120%);
+    transition: transform 0.3s ease;
+  }
 
+  
   .nav.active {
     transform: translateY(0);
   }

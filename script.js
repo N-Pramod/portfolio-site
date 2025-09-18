@@ -1,6 +1,19 @@
 // -------------------------
 // Hamburger menu toggle
 // -------------------------
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav');
+const closeBtn = document.querySelector('.close-btn');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.add('active');
+});
+
+closeBtn.addEventListener('click', () => {
+  nav.classList.remove('active');
+});
+
 // Hamburger menu toggle removed
 
 // -------------------------
