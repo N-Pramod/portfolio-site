@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
   hamburger.addEventListener('click', () => {
     nav.classList.add('active');
     document.body.style.overflow = 'hidden';
-    document.body.style.backgroundColor = '#dfdfdf';
+    document.body.style.backgroundColor = '#ffffffff';
   });
 
   // Close mobile menu
   closeBtn.addEventListener('click', () => {
     nav.classList.remove('active');
     document.body.style.overflow = 'auto';
-    document.body.style.backgroundColor = '#dfdfdf';
+    document.body.style.backgroundColor = '#ffffffff';
   });
 
   // Close menu when clicking on nav links
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     link.addEventListener('click', () => {
       nav.classList.remove('active');
       document.body.style.overflow = 'auto';
-      document.body.style.backgroundColor = '#dfdfdf';
+      document.body.style.backgroundColor = '#ffffffff';
     });
   });
 
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (e.target === nav) {
       nav.classList.remove('active');
       document.body.style.overflow = 'auto';
-      document.body.style.backgroundColor = '#dfdfdf';
+      document.body.style.backgroundColor = '#ffffffff';
     }
   });
 });
