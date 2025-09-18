@@ -96,9 +96,12 @@ body {
   }
 
   .nav ul {
-    flex-direction: column;
+    /* flex-direction: column;
     padding: 15px;
-    gap: 15px;
+    gap: 15px; */
+    display:block;
+    text-align: left;
+    padding: 10px 15px;
   }
 
   .hamburger {
