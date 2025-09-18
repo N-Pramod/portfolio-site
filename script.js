@@ -1,26 +1,20 @@
 // -------------------------
 // Hamburger menu toggle
 // -------------------------
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('nav');
+  const closeBtn = document.getElementById('close-btn');
 
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.nav');
-const closeBtn = document.querySelector('.close-btn');
+  hamburger.addEventListener('click', () => {
+    nav.classList.add('active');
+  });
 
-hamburger.addEventListener('click', () => {
-  nav.classList.add('active');
+  closeBtn.addEventListener('click', () => {
+    nav.classList.remove('active');
+  });
 });
 
-closeBtn.addEventListener('click', () => {
-  nav.classList.remove('active');
-});
-
-document.querySelector('.hamburger').addEventListener('click', function() {
-  document.querySelector('.nav').classList.add('active');
-});
-
-document.querySelector('.close-btn').addEventListener('click', function() {
-  document.querySelector('.nav').classList.remove('active');
-});
 
 
 // Hamburger menu toggle removed
